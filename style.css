@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+}
+
+body {
+    background: linear-gradient(135deg, #1e3a8a, #10b981);
+}
+.title{
+    text-align: center;
+    color: #FFFFFF;
+    margin: 20px auto;
+    display: block;
+    font-size: 2.5rem;
+    text-shadow: 1px 1px 3px rgba( 0, 0, 0, 0.3);
+}
+
+.paragraph {
+    text-align: center;
+    color: #e0f7fa;
+    margin: 20px auto;
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+
+main {
+    width: 375px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba( 0, 0, 0, 0.2);
+    background-color: rgba( 0, 0, 0, 0.4);
+    backdrop-filter: blur(8px);
+    margin: 0 auto 40px;
+    padding: 44px 24px 23px;
+    
+}
+
+label {
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+select, input {
+    background: #FFFFFF;
+    border: 1px solid #BBBBBB;
+    border-radius: 4px;
+    height: 48px;
+    width: 100%;
+    margin-bottom: 24px;
+    appearance: none;
+    padding-left: 18px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #555555;
+    cursor: pointer;
+}
+
+button {
+    background: linear-gradient(135deg, #10b981, #1e3a8a);
+    color: #ffffff;
+    color: #fff;
+    border-radius: 5px;
+    width: 100%;
+    border: none;
+    height: 48px;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #10b98180;
+    transition: 0.3s;
+}
+
+button:active {
+    opacity: 0.6;
+}
+
+section {
+    border: 1px solid #FFFFFF;
+    border-radius: 15px;
+    margin-top: 36px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.seta {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 25px solid #ffffff; 
+    margin: 15px auto;
+    animation: pulse 1.5s infinite;
+  }
+  
+  @keyframes pulse {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(5px); }
+    100% { transform: translateY(0); }
+  }
+
+.currency-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+
+.currency {
+    color: #FFFFFF;
+    font-size: 20px;
+}
+
+.currency-value, .currency-value-to-convert {
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 900px) {
+    .logo {
+        display: none;
+    }
+}
